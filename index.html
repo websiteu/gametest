@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Last Stand: Survival — Prototype</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,viewport-fit=cover"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-root">
+    <div id="hud">
+      <div id="stats">
+        <div id="health" class="stat">Health: <span id="health-val">100</span></div>
+        <div id="hunger" class="stat">Hunger: <span id="hunger-val">0</span></div>
+        <div id="thirst" class="stat">Thirst: <span id="thirst-val">0</span></div>
+        <div id="fatigue" class="stat">Fatigue: <span id="fatigue-val">0</span></div>
+        <div id="sanity" class="stat">Sanity: <span id="sanity-val">100</span></div>
+      </div>
+      <div id="controls-ui"></div>
+      <div id="log"></div>
+    </div>
+  </div>
+
+  <!-- PIXI and Howler from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+
+  <!-- Game scripts -->
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
